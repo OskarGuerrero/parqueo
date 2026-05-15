@@ -1,0 +1,6 @@
+node_modules/
+parqueo.db
+parqueo.db-journal
+.env
+.env.local
+.DS_Store
