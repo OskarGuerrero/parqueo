@@ -1,0 +1,22 @@
+{
+  "name": "parqueo-system",
+  "version": "1.0.0",
+  "description": "Sistema de control de parqueo",
+  "type": "module",
+  "scripts": {
+    "build": "npm install --prefix frontend && npm run build --prefix frontend && npm install --prefix backend",
+    "start": "node backend/server.js",
+    "dev": "npm start"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "sqlite3": "^5.1.6",
+    "uuid": "^9.0.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.0.0",
+    "terser": "^5.47.1",
+    "vite": "^4.3.0"
+  }
+}

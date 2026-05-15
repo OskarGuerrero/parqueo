@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: parqueo
+    env: node
+    region: oregon
+    plan: free
+    buildCommand: "npm install && npm install --prefix frontend && npm run build --prefix frontend && npm install --prefix backend"
+    startCommand: "node backend/server.js"
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: VITE_API_URL
+        value: /api
